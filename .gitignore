@@ -10,3 +10,4 @@ build
 .fx/states/state.local.json
 .backup
 .env
+process.env
