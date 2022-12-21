@@ -8,7 +8,7 @@ export function Chat() {
   const [result, setResult] = useState();
   const [gif, setGif] = useState();
 
-  const { REACT_APP_OPENAI_API_KEY } = "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";
+  const { REACT_APP_OPENAI_API_KEY } = process.env;
   async function onSubmit(event) {
     //show loading icon while waiting for response
     setResult(<img src="/loading.gif" alt="loading"/>);
