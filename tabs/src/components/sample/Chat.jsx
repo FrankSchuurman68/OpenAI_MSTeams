@@ -8,7 +8,7 @@ export function Chat() {
   const [result, setResult] = useState();
   const [gif, setGif] = useState();
 
-  const { REACT_APP_OPENAI_API_KEY } = process.env;
+  const { REACT_APP_OPENAI_API_KEY } = "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";
   async function onSubmit(event) {
     //show loading icon while waiting for response
     setResult(<img src="/loading.gif" alt="loading"/>);
@@ -49,11 +49,11 @@ export function Chat() {
           <input
             type="text"
             name="input"
-            placeholder="What do you need help with?"
+            placeholder="Stel je vraag?"
             value={input}
             onChange={(e) => setinput(e.target.value)}
           />
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Vraag" />
         </form>
       </main>
     </div>
